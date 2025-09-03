@@ -33,18 +33,17 @@ def create_producer():
 # #####################################
 
 
-def process_message(message: str) -> None:
-    """
-    Process a single message.
+def generate_sensor_message():
+    temp = round(random.uniform(180, 230), 2)  # °C
+    pressure = round(random.uniform(90, 120), 2)  # bar
+    motor_speed = round(random.uniform(1400, 1600), 0)  # RPM
 
-    For now, this function simply logs the message.
-    You can extend it to perform other tasks, like counting words
-    or storing data in a database.
-
-    Args:
-        message (str): The message to process.
-    """
-    logger.info(f"Processing message: {message}")
+    if temp > 220:
+        return f"ALERT: Extruder overheating! Temp={temp}°C"
+    elif pressure > 115:
+        return f"ALERT: High pressure detected! Pressure={pressure} bar"
+    else:
+        return f"Extrusion reading: Temp={temp}°C, Pressure={pressure} bar, Motor={motor_speed} RPM"
 
 
 #####################################
