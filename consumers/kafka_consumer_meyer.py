@@ -1,21 +1,12 @@
 """
-kafka_consumer_case.py
-
-Consume messages from a Kafka topic and process them.
+Custom producer that emits extrusion sensor readings.
 """
 
-#####################################
-# Import Modules
-#####################################
-
-# Import packages from Python Standard Library
 import os
-
-# Import external packages
+import random
+import time
 from dotenv import load_dotenv
-
-# Import functions from local modules
-from utils.utils_consumer import create_kafka_consumer
+from kafka import KafkaProducer
 from utils.utils_logger import logger
 
 #####################################
