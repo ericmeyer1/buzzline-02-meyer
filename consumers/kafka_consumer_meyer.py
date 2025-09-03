@@ -15,24 +15,18 @@ from utils.utils_logger import logger
 
 load_dotenv()
 
-#####################################
-# Getter Functions for .env Variables
-#####################################
-
-
-def get_kafka_topic() -> str:
-    """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("KAFKA_TOPIC", "unknown_topic")
-    logger.info(f"Kafka topic: {topic}")
-    return topic
-
-
-def get_kafka_consumer_group_id() -> int:
-    """Fetch Kafka consumer group id from environment or use default."""
-    group_id: str = os.getenv("KAFKA_CONSUMER_GROUP_ID_JSON", "default_group")
-    logger.info(f"Kafka consumer group id: {group_id}")
-    return group_id
-
+# Initialize Kafka producer
+def create_producer():
+    try:
+        producer = KafkaProducer(
+            bootstrap_servers=os.getenv("KAFKA_BROKER", "localhost:9092"),
+            value_serializer=lambda v: str(v).encode("utf-8"),
+        )
+        logger.info("Kafka Producer created successfully.")
+        return producer
+    except Exception as e:
+        logger.error(f"Failed to create Kafka producer: {e}")
+        return None
 
 #####################################
 # Define a function to process a single message
