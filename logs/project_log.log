@@ -135,3 +135,102 @@
 2025-09-01 20:56:09 | WARNING | Consumer interrupted by user.
 2025-09-01 20:56:09 | INFO | Kafka consumer for topic 'buzzline' closed.
 2025-09-01 20:56:09 | INFO | END consumer for topic 'buzzline' and group 'default_group'.
+2025-09-02 20:39:37 | INFO | Logging to file: logs/project_log.log
+2025-09-02 20:39:37 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-02 20:39:37 | INFO | START producer.
+2025-09-02 20:39:37 | INFO | Loading environment variables from .env file...
+2025-09-02 20:39:37 | INFO | Kafka broker address: localhost:9092
+2025-09-02 20:39:38 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '7yuqACamSUCn9anygh-Jvg', 'controller_id': 1}
+2025-09-02 20:39:38 | INFO | Kafka topic: buzzline
+2025-09-02 20:39:38 | INFO | Message interval: 1 seconds
+2025-09-02 20:39:38 | INFO | Kafka broker address: localhost:9092
+2025-09-02 20:39:38 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-02 20:39:38 | INFO | Kafka producer successfully created.
+2025-09-02 20:39:38 | INFO | Kafka broker address: localhost:9092
+2025-09-02 20:39:38 | INFO | Creating 'buzzline'.
+2025-09-02 20:39:38 | INFO | Topic 'buzzline' created successfully.
+2025-09-02 20:39:38 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-02 20:39:38 | INFO | Starting message production to topic 'buzzline'...
+2025-09-02 20:39:38 | INFO | Generated buzz: Weather is sunny 🌞
+2025-09-02 20:39:38 | INFO | Sent message to topic 'buzzline': Weather is sunny 🌞
+2025-09-02 20:39:39 | INFO | Generated buzz: Stock price: $123.45 📈
+2025-09-02 20:39:39 | INFO | Sent message to topic 'buzzline': Stock price: $123.45 📈
+2025-09-02 20:39:40 | INFO | Generated buzz: System health: OK ✅
+2025-09-02 20:39:40 | INFO | Sent message to topic 'buzzline': System health: OK ✅
+2025-09-02 20:39:41 | INFO | Generated buzz: Alert: High CPU usage ⚠️
+2025-09-02 20:39:41 | INFO | Sent message to topic 'buzzline': Alert: High CPU usage ⚠️
+2025-09-02 20:39:42 | INFO | Generated buzz: Custom message from Meyer 🚀
+2025-09-02 20:39:42 | INFO | Sent message to topic 'buzzline': Custom message from Meyer 🚀
+2025-09-02 20:39:43 | INFO | Generated buzz: Weather is sunny 🌞
+2025-09-02 20:39:43 | INFO | Sent message to topic 'buzzline': Weather is sunny 🌞
+2025-09-02 20:39:44 | INFO | Generated buzz: Stock price: $123.45 📈
+2025-09-02 20:39:44 | INFO | Sent message to topic 'buzzline': Stock price: $123.45 📈
+2025-09-02 20:39:45 | INFO | Generated buzz: System health: OK ✅
+2025-09-02 20:39:45 | INFO | Sent message to topic 'buzzline': System health: OK ✅
+2025-09-02 20:39:46 | INFO | Generated buzz: Alert: High CPU usage ⚠️
+2025-09-02 20:39:46 | INFO | Sent message to topic 'buzzline': Alert: High CPU usage ⚠️
+2025-09-02 20:39:47 | INFO | Generated buzz: Custom message from Meyer 🚀
+2025-09-02 20:39:47 | INFO | Sent message to topic 'buzzline': Custom message from Meyer 🚀
+2025-09-02 20:39:48 | INFO | Generated buzz: Weather is sunny 🌞
+2025-09-02 20:39:48 | INFO | Sent message to topic 'buzzline': Weather is sunny 🌞
+2025-09-02 20:39:49 | INFO | Generated buzz: Stock price: $123.45 📈
+2025-09-02 20:39:49 | INFO | Sent message to topic 'buzzline': Stock price: $123.45 📈
+2025-09-02 20:39:50 | INFO | Generated buzz: System health: OK ✅
+2025-09-02 20:39:50 | INFO | Sent message to topic 'buzzline': System health: OK ✅
+2025-09-02 20:39:51 | INFO | Generated buzz: Alert: High CPU usage ⚠️
+2025-09-02 20:39:51 | INFO | Sent message to topic 'buzzline': Alert: High CPU usage ⚠️
+2025-09-02 20:39:52 | INFO | Generated buzz: Custom message from Meyer 🚀
+2025-09-02 20:39:52 | INFO | Sent message to topic 'buzzline': Custom message from Meyer 🚀
+2025-09-02 20:39:53 | INFO | Generated buzz: Weather is sunny 🌞
+2025-09-02 20:39:53 | INFO | Sent message to topic 'buzzline': Weather is sunny 🌞
+2025-09-02 20:39:54 | INFO | Generated buzz: Stock price: $123.45 📈
+2025-09-02 20:39:54 | INFO | Sent message to topic 'buzzline': Stock price: $123.45 📈
+2025-09-02 20:39:55 | INFO | Generated buzz: System health: OK ✅
+2025-09-02 20:39:55 | INFO | Sent message to topic 'buzzline': System health: OK ✅
+2025-09-02 20:39:56 | INFO | Generated buzz: Alert: High CPU usage ⚠️
+2025-09-02 20:39:56 | INFO | Sent message to topic 'buzzline': Alert: High CPU usage ⚠️
+2025-09-02 20:39:58 | INFO | Generated buzz: Custom message from Meyer 🚀
+2025-09-02 20:39:58 | INFO | Sent message to topic 'buzzline': Custom message from Meyer 🚀
+2025-09-02 20:39:59 | INFO | Generated buzz: Weather is sunny 🌞
+2025-09-02 20:39:59 | INFO | Sent message to topic 'buzzline': Weather is sunny 🌞
+2025-09-02 20:40:00 | INFO | Generated buzz: Stock price: $123.45 📈
+2025-09-02 20:40:00 | INFO | Sent message to topic 'buzzline': Stock price: $123.45 📈
+2025-09-02 20:40:01 | WARNING | Producer interrupted by user.
+2025-09-02 20:40:01 | INFO | Kafka producer closed.
+2025-09-02 20:40:01 | INFO | END producer.
+2025-09-02 20:45:10 | INFO | Logging to file: logs/project_log.log
+2025-09-02 20:45:10 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-02 20:45:10 | INFO | Kafka Producer created successfully.
+2025-09-02 20:45:10 | INFO | Starting Extrusion Sensor Producer...
+2025-09-02 20:45:10 | INFO | Sent: ALERT: High pressure detected! Pressure=118.96 bar
+2025-09-02 20:45:12 | INFO | Sent: ALERT: Extruder overheating! Temp=222.82°C
+2025-09-02 20:45:14 | INFO | Sent: Extrusion reading: Temp=209.11°C, Pressure=93.62 bar, Motor=1405.0 RPM
+2025-09-02 20:45:16 | INFO | Sent: ALERT: High pressure detected! Pressure=116.7 bar
+2025-09-02 20:45:18 | INFO | Sent: Extrusion reading: Temp=195.84°C, Pressure=100.5 bar, Motor=1497.0 RPM
+2025-09-02 20:45:20 | INFO | Sent: ALERT: High pressure detected! Pressure=119.4 bar
+2025-09-02 20:45:22 | INFO | Sent: ALERT: Extruder overheating! Temp=226.19°C
+2025-09-02 20:45:24 | INFO | Sent: ALERT: Extruder overheating! Temp=224.77°C
+2025-09-02 20:45:26 | INFO | Sent: ALERT: High pressure detected! Pressure=118.37 bar
+2025-09-02 20:45:28 | INFO | Sent: ALERT: High pressure detected! Pressure=115.58 bar
+2025-09-02 20:45:30 | INFO | Sent: Extrusion reading: Temp=210.04°C, Pressure=112.51 bar, Motor=1431.0 RPM
+2025-09-02 20:45:32 | INFO | Sent: Extrusion reading: Temp=212.73°C, Pressure=91.95 bar, Motor=1566.0 RPM
+2025-09-02 20:45:35 | INFO | Sent: ALERT: Extruder overheating! Temp=227.67°C
+2025-09-02 20:45:37 | INFO | Sent: Extrusion reading: Temp=206.96°C, Pressure=100.07 bar, Motor=1526.0 RPM
+2025-09-02 20:45:39 | INFO | Sent: ALERT: Extruder overheating! Temp=227.97°C
+2025-09-02 20:45:40 | WARNING | Producer interrupted by user.
+2025-09-02 20:45:40 | INFO | Producer closed.
+2025-09-02 20:45:55 | INFO | Logging to file: logs/project_log.log
+2025-09-02 20:45:55 | INFO | Log sanitization enabled, personal info will be removed
+2025-09-02 20:45:56 | INFO | Kafka Producer created successfully.
+2025-09-02 20:45:56 | INFO | Starting Extrusion Sensor Producer...
+2025-09-02 20:45:56 | INFO | Sent: Extrusion reading: Temp=211.75°C, Pressure=106.46 bar, Motor=1575.0 RPM
+2025-09-02 20:45:58 | INFO | Sent: Extrusion reading: Temp=191.75°C, Pressure=92.66 bar, Motor=1492.0 RPM
+2025-09-02 20:46:00 | INFO | Sent: ALERT: High pressure detected! Pressure=118.47 bar
+2025-09-02 20:46:02 | INFO | Sent: Extrusion reading: Temp=211.93°C, Pressure=103.88 bar, Motor=1426.0 RPM
+2025-09-02 20:46:04 | INFO | Sent: Extrusion reading: Temp=191.61°C, Pressure=111.48 bar, Motor=1492.0 RPM
+2025-09-02 20:46:07 | INFO | Sent: ALERT: Extruder overheating! Temp=229.85°C
+2025-09-02 20:46:09 | INFO | Sent: Extrusion reading: Temp=203.47°C, Pressure=111.47 bar, Motor=1484.0 RPM
+2025-09-02 20:46:11 | INFO | Sent: Extrusion reading: Temp=198.72°C, Pressure=105.49 bar, Motor=1520.0 RPM
+2025-09-02 20:46:13 | INFO | Sent: ALERT: Extruder overheating! Temp=220.11°C
+2025-09-02 20:46:15 | WARNING | Producer interrupted by user.
+2025-09-02 20:46:15 | INFO | Producer closed.
