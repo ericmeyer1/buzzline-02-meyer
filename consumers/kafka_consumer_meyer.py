@@ -51,41 +51,25 @@ def generate_sensor_message():
 #####################################
 
 
-def main() -> None:
-    """
-    Main entry point for the consumer.
+def main():
+    producer = create_producer()
+    if not producer:
+        return
 
-    - Reads the Kafka topic name and consumer group ID from environment variables.
-    - Creates a Kafka consumer using the `create_kafka_consumer` utility.
-    - Processes messages from the Kafka topic.
-    """
-    logger.info("START consumer.")
+    topic = os.getenv("KAFKA_TOPIC", "extrusion_data")
 
-    # fetch .env content
-    topic = get_kafka_topic()
-    group_id = get_kafka_consumer_group_id()
-    logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
-
-    # Create the Kafka consumer using the helpful utility function.
-    consumer = create_kafka_consumer(topic, group_id)
-
-     # Poll and process messages
-    logger.info(f"Polling messages from topic '{topic}'...")
     try:
-        for message in consumer:
-            message_str = message.value
-            logger.debug(f"Received message at offset {message.offset}: {message_str}")
-            process_message(message_str)
+        logger.info("Starting Extrusion Sensor Producer...")
+        while True:
+            msg = generate_sensor_message()
+            producer.send(topic, msg)
+            logger.info(f"Sent: {msg}")
+            time.sleep(2)
     except KeyboardInterrupt:
-        logger.warning("Consumer interrupted by user.")
-    except Exception as e:
-        logger.error(f"Error while consuming messages: {e}")
+        logger.warning("Producer interrupted by user.")
     finally:
-        consumer.close()
-        logger.info(f"Kafka consumer for topic '{topic}' closed.")
-
-    logger.info(f"END consumer for topic '{topic}' and group '{group_id}'.")
-
+        producer.close()
+        logger.info("Producer closed.")
 
 #####################################
 # Conditional Execution
